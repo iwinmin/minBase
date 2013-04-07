@@ -1,14 +1,14 @@
-minTransfer
+minBase
 ============
 
-A Event-driven Dual-Way WebData Exchange Library
+> A Event-driven Dual-Way WebData Exchange Library
 
 
-Author
+Maintainer
 ============
 
-* [@iwinmin](https://github.com/iwinmin)
-* [Blog](http://blog.win-ing.cn)
+> [WinMin](https://github.com/iwinmin)<br>
+> http://blog.win-ing.cn
 
 
 License

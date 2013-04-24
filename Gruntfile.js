@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 				newcap: true,
 				noarg: true,
 				undef: true,
-				unused: true,
+				unused: 'vars',
 				boss: true,
 				eqnull: true,
 				predef: ['window','console'],

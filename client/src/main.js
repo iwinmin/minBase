@@ -24,23 +24,23 @@
 	Interface.prototype = {
 		version: '@VERSION',
 
-		use: function(/*process*/){
+		use: function(process){
 
 		},
 
-		set_session: function(/*session_id*/){
+		set_session: function(session_id){
 
 		},
 
-		bind: function(/*uri, param, callback, count*/){
+		bind: function(uri, param, callback, count){
 
 		},
 
-		unbind: function(/*uri, callback*/){
+		unbind: function(uri, callback){
 
 		},
 
-		send: function(/*uri, message*/){
+		send: function(uri, message){
 
 		},
 		/**
@@ -132,6 +132,7 @@
 	 * @return {None}
 	 */
 	function log_warn(msg){
+		// IFDEF DEBUG
 		if (con){
 			if (con.warn){
 				con.warn('minBase - ' + msg);
@@ -139,6 +140,7 @@
 				con.log('[WARNING] minBase - ' + msg);
 			}
 		}
+		// ENDIF
 	}
 	/**
 	 * Console Log Error Message
@@ -146,6 +148,7 @@
 	 * @return {None}
 	 */
 	function log_error(msg){
+		// IFDEF DEBUG
 		if (con){
 			if (con.error){
 				con.error('minBase - ' + msg);
@@ -153,6 +156,7 @@
 				con.log('[ERROR] minBase - ' + msg);
 			}
 		}
+		// ENDIF
 	}
 
 	// export Manager Object to global
